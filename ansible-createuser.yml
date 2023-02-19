@@ -3,6 +3,7 @@
 - hosts: all
   tasks:
   - name: Create Ansible User
+    become: true
     user:
       name: ansible
       create_home: true
